@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click Fit</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true });
+    </script>
+
+    <!-- BOOTSTRAP -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    /> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- ICONS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- JS -->
+    <script src="/js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img
+                src="images/logo_white.svg"
+                alt="logo dark mode"
+                class="logo-white"
+              />
+              <img
+                src="images/logo_black.svg"
+                alt="logo light mode"
+                class="logo-dark"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-fold-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#class">Classes</a></li>
+          <li><a href="#contact">Blog</a></li>
+          <li><a href="#">Join Now</a></li>
+        </ul>
+        <div class="nav__btns">
+          <button class="btn">Join Now</button>
+        </div>
+      </nav>
+      <div class="section__container header__container" id="Home">
+        <div class="header__content">
+          <h1>ACHIEVE YOUR DREAM PHYSIQUE WITH CLICK FIT!</h1>
+          <p>
+            Personalized workouts, expert guidance, and real progress
+            tracking—all in one!
+          </p>
+          <div class="header__btn">
+            <button class="btn">Start Your Journey Now</button>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="images/header.png" alt="hero image" />
+        </div>
+      </div>
+    </header>
+
+    <!-- about section -->
+    <div class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__image">
+          <img src="images/about.png" alt="about image" />
+        </div>
+        <div class="about__content">
+          <h2 class="section__header">WHY CHOOSE CLICK FIT?</h2>
+          <p>
+            Fitness isn’t just about lifting weights or running miles—it’s about
+            consistency, knowledge, and fun! With Click Fit, you don’t just work
+            out; you transform your lifestyle with science-backed programs and a
+            supportive community.
+          </p>
+          <p>
+            Be part of a fitness revolution where technology meets training.
+            Whether you want to build muscle, lose weight, or boost endurance,
+            Click Fit is here to guide you every step of the way.
+          </p>
+          <div class="about__btn">
+            <button class="btn">Join The Movement</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">Services We Provide</h2>
+        <div class="service__grid">
+          <!-- Card 1 -->
+          <div class="service__card">
+            <span>01</span>
+            <h4>Fitness Training</h4>
+            <p>
+              Personalized workout plans to help you achieve your fitness goals,
+              whether it's muscle building, weight loss, or endurance training.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service__card">
+            <span>02</span>
+            <h4>Nutrition Guidance</h4>
+            <p>
+              Get expert meal plans and dietary advice tailored to your fitness
+              journey, ensuring optimal performance and recovery.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service__card">
+            <span>03</span>
+            <h4>Online Coaching</h4>
+            <p>
+              Access virtual coaching sessions with certified trainers to get
+              real-time feedback and maximize your progress.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="service__card">
+            <span>04</span>
+            <h4>Progress Tracking</h4>
+            <p>
+              Monitor your fitness journey with smart tracking tools, helping
+              you stay on top of your goals and see real improvements.
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="service__card">
+            <span>05</span>
+            <h4>Community Challenges</h4>
+            <p>
+              Stay motivated by joining fitness challenges and competing with
+              others in our community to push your limits.
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="service__card">
+            <span>06</span>
+            <h4>Recovery & Wellness</h4>
+            <p>
+              Learn recovery techniques, mobility exercises, and stress
+              management strategies to maintain overall health and well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- classes -->
+    <section class="popular" id="class">
+      <div class="section__container popular__container">
+        <h2 class="section__header">Get Ready For Today's Sessions.</h2>
+        <div class="popular__grid">
+          <!-- Card 1 -->
+          <div class="popular__card">
+            <h4>Body Combat</h4>
+            <p>
+              A high-energy workout inspired by martial arts to improve
+              strength, endurance, and agility.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="popular__card">
+            <h4>HIIT Training</h4>
+            <p>
+              Burn fat and build muscle with high-intensity interval training
+              designed to maximize results in less time.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="popular__card">
+            <h4>Strength & Conditioning</h4>
+            <p>
+              Enhance muscle strength and endurance through structured weight
+              training and functional exercises.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="popular__card">
+            <h4>Yoga Flow</h4>
+            <p>
+              Boost flexibility, balance, and mindfulness with a dynamic yoga
+              session suitable for all levels.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="popular__card">
+            <h4>CrossFit</h4>
+            <p>
+              Challenge yourself with varied functional movements and intense
+              training to build overall fitness.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="popular__card">
+            <h4>Pilates</h4>
+            <p>
+              Improve core strength, posture, and flexibility with a low-impact
+              but highly effective workout.
+            </p>
+            <span>
+              <i class="ri-arrow-right-s-line"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fun Fact Section
+    <section class="fun-fact text-center">
+      <h2>Did You Know?</h2>
+      <p id="fact" class="alert alert-info">Loading...</p>
+    </section> -->
+
+    <!-- Image Upload Section -->
+    <!-- <section class="upload-section text-center">
+      <h2>Upload Your Workout Photos</h2>
+      <div id="drop-area">
+        <p>Drag & Drop images here or click to upload</p>
+        <input type="file" id="fileInput" multiple hidden />
+      </div>
+    </section> -->
+
+    <!-- BOOTSTRAP -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

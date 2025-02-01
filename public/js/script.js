@@ -63,63 +63,75 @@ ScrollReveal().reveal(".service__card", {
   duration: 1000,
   interval: 500,
 });
-// TODO
+// strong
+ScrollReveal().reveal(".strong__content .section__header", {
+  ...reveal_options,
+});
+ScrollReveal().reveal(".strong__content p", {
+  ...reveal_options,
+  delay: 500,
+});
+
+// coaches
+ScrollReveal().reveal(".coaches__card", {
+  ...reveal_options,
+  interval: 500,
+});
+ScrollReveal().reveal(".gallery__card", {
+  ...reveal_options,
+  interval: 500,
+});
+// banner
+ScrollReveal().reveal(".banner__content h2", {
+  ...reveal_options,
+});
+ScrollReveal().reveal(".banner__content p", {
+  ...reveal_options,
+  delay: 500,
+});
+
+// drag&drop
+$("#draggable").draggable();
+$("#droppable").droppable({
+  drop: function (event, ui) {
+    $(this).addClass("ui-state-highlight").find("img").html("Dropped!");
+    alert("🏀 Congratulations! You made the shot! 🎉");
+  },
+});
+
+// ajax call
 $(document).ready(function () {
+  // ajax call
   $.ajax({
     url: "http://numbersapi.com/1/30/date?json",
     method: "GET",
     success: function (response) {
-      $("#fact").text(response.text);
+      $("#fact").html(
+        response.text +
+          "<span class='highlight'> And Don't forget to drop the ball into the basket to score a FREE one-month membership! 🏀🔥</span>"
+      );
     },
     error: function () {
       $("#fact").text("Failed to load the fact.");
     },
   });
 
-  //   // Drag and Drop Image Upload
-  //   let dropArea = $("#drop-area");
+  // download images
+  $(".downloadable").on("click", function () {
+    const imageUrl = $(this).attr("src");
+    const filename = $(this).data("filename");
 
-  //   dropArea.on("click", function () {
-  //     $("#fileInput").click();
-  //   });
-
-  //   dropArea.on("dragover", function (e) {
-  //     e.preventDefault();
-  //     $(this).addClass("dragging");
-  //   });
-
-  //   dropArea.on("dragleave drop", function () {
-  //     $(this).removeClass("dragging");
-  //   });
-
-  //   dropArea.on("drop", function (e) {
-  //     e.preventDefault();
-  //     let files = e.originalEvent.dataTransfer.files;
-  //     uploadFiles(files);
-  //   });
-
-  //   $("#fileInput").on("change", function () {
-  //     uploadFiles(this.files);
-  //   });
-
-  //   function uploadFiles(files) {
-  //     let formData = new FormData();
-  //     $.each(files, function (i, file) {
-  //       formData.append("file", file);
-  //     });
-
-  //     $.ajax({
-  //       url: "/upload",
-  //       method: "POST",
-  //       data: formData,
-  //       contentType: false,
-  //       processData: false,
-  //       success: function (response) {
-  //         alert("File uploaded successfully!");
-  //       },
-  //       error: function () {
-  //         alert("File upload failed.");
-  //       },
-  //     });
-  //   }
+    $.ajax({
+      url: "/upload",
+      method: "POST",
+      contentType: "application/json",
+      data: JSON.stringify({ url: imageUrl, filename: filename }),
+      success: function (response) {
+        alert("Image saved successfully!");
+      },
+      error: function () {
+        alert("Failed to save image.");
+      },
+    });
+  });
 });

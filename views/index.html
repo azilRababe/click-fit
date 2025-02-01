@@ -8,12 +8,6 @@
     <script>
       ScrollReveal({ reset: true });
     </script>
-
-    <!-- BOOTSTRAP -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    /> -->
     <!-- CSS -->
     <link rel="stylesheet" href="/css/styles.css" />
     <!-- JQUERY -->
@@ -22,6 +16,7 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <!-- ICONS -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -54,12 +49,12 @@
           </div>
         </div>
         <ul class="nav__links" id="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#home" style="color: #fbc344">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#service">Services</a></li>
           <li><a href="#class">Classes</a></li>
-          <li><a href="#contact">Blog</a></li>
-          <li><a href="#">Join Now</a></li>
+          <li><a href="#contact">Gallery</a></li>
+          <li><a href="#">Join Us</a></li>
         </ul>
         <div class="nav__btns">
           <button class="btn">Join Now</button>
@@ -111,9 +106,8 @@
     <!-- services -->
     <section class="service" id="service">
       <div class="section__container service__container">
-        <h2 class="section__header">Services We Provide</h2>
+        <h2 class="section__header">What We Do</h2>
         <div class="service__grid">
-          <!-- Card 1 -->
           <div class="service__card">
             <span>01</span>
             <h4>Fitness Training</h4>
@@ -122,8 +116,6 @@
               whether it's muscle building, weight loss, or endurance training.
             </p>
           </div>
-
-          <!-- Card 2 -->
           <div class="service__card">
             <span>02</span>
             <h4>Nutrition Guidance</h4>
@@ -132,8 +124,6 @@
               journey, ensuring optimal performance and recovery.
             </p>
           </div>
-
-          <!-- Card 3 -->
           <div class="service__card">
             <span>03</span>
             <h4>Online Coaching</h4>
@@ -142,8 +132,6 @@
               real-time feedback and maximize your progress.
             </p>
           </div>
-
-          <!-- Card 4 -->
           <div class="service__card">
             <span>04</span>
             <h4>Progress Tracking</h4>
@@ -152,8 +140,6 @@
               you stay on top of your goals and see real improvements.
             </p>
           </div>
-
-          <!-- Card 5 -->
           <div class="service__card">
             <span>05</span>
             <h4>Community Challenges</h4>
@@ -162,8 +148,6 @@
               others in our community to push your limits.
             </p>
           </div>
-
-          <!-- Card 6 -->
           <div class="service__card">
             <span>06</span>
             <h4>Recovery & Wellness</h4>
@@ -176,13 +160,12 @@
       </div>
     </section>
 
-    <!-- classes -->
-    <section class="popular" id="class">
-      <div class="section__container popular__container">
+    <!-- planning -->
+    <section class="planning" id="class">
+      <div class="section__container planning__container">
         <h2 class="section__header">Get Ready For Today's Sessions.</h2>
-        <div class="popular__grid">
-          <!-- Card 1 -->
-          <div class="popular__card">
+        <div class="planning__grid">
+          <div class="planning__card">
             <h4>Body Combat</h4>
             <p>
               A high-energy workout inspired by martial arts to improve
@@ -192,9 +175,7 @@
               <i class="ri-arrow-right-s-line"></i>
             </span>
           </div>
-
-          <!-- Card 2 -->
-          <div class="popular__card">
+          <div class="planning__card">
             <h4>HIIT Training</h4>
             <p>
               Burn fat and build muscle with high-intensity interval training
@@ -204,9 +185,7 @@
               <i class="ri-arrow-right-s-line"></i>
             </span>
           </div>
-
-          <!-- Card 3 -->
-          <div class="popular__card">
+          <div class="planning__card">
             <h4>Strength & Conditioning</h4>
             <p>
               Enhance muscle strength and endurance through structured weight
@@ -216,9 +195,7 @@
               <i class="ri-arrow-right-s-line"></i>
             </span>
           </div>
-
-          <!-- Card 4 -->
-          <div class="popular__card">
+          <div class="planning__card">
             <h4>Yoga Flow</h4>
             <p>
               Boost flexibility, balance, and mindfulness with a dynamic yoga
@@ -228,9 +205,7 @@
               <i class="ri-arrow-right-s-line"></i>
             </span>
           </div>
-
-          <!-- Card 5 -->
-          <div class="popular__card">
+          <div class="planning__card">
             <h4>CrossFit</h4>
             <p>
               Challenge yourself with varied functional movements and intense
@@ -240,9 +215,7 @@
               <i class="ri-arrow-right-s-line"></i>
             </span>
           </div>
-
-          <!-- Card 6 -->
-          <div class="popular__card">
+          <div class="planning__card">
             <h4>Pilates</h4>
             <p>
               Improve core strength, posture, and flexibility with a low-impact
@@ -256,22 +229,180 @@
       </div>
     </section>
 
-    <!-- Fun Fact Section
-    <section class="fun-fact text-center">
-      <h2>Did You Know?</h2>
-      <p id="fact" class="alert alert-info">Loading...</p>
-    </section> -->
-
-    <!-- Image Upload Section -->
-    <!-- <section class="upload-section text-center">
-      <h2>Upload Your Workout Photos</h2>
-      <div id="drop-area">
-        <p>Drag & Drop images here or click to upload</p>
-        <input type="file" id="fileInput" multiple hidden />
+    <!-- strong -->
+    <section class="strong__container">
+      <div class="strong__image">
+        <img src="images/strong.jpg" alt="strong" />
       </div>
-    </section> -->
+      <div class="strong__content">
+        <h2 class="section__header">Are You Ready To Get Stronger?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo,
+          molestiae doloremque sed a nulla deleniti temporibus dolorem velit
+          tempore commodi similique vero fugiat aliquid, quis eveniet nobis non
+          voluptas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo,
+          molestiae doloremque sed a nulla deleniti temporibus dolorem velit
+          tempore commodi similique vero fugiat aliquid, quis eveniet nobis non
+          voluptas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque illo,
+          molestiae doloremque sed a nulla deleniti temporibus dolorem velit
+          tempore commodi similique vero fugiat aliquid, quis eveniet nobis non
+          voluptas.
+        </p>
+      </div>
+    </section>
 
-    <!-- BOOTSTRAP -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- coaches -->
+    <section class="section__container coaches__container">
+      <h2 class="section__header">Meet The Team</h2>
+      <div class="coaches__grid">
+        <div class="coaches__card">
+          <img src="images/coach-01.jpg" alt="coach 01" data-id="1" />
+          <h4>Julio Ramirez</h4>
+          <p>MMA Fighter</p>
+        </div>
+        <div class="coaches__card">
+          <img src="images/coach-02.jpg" alt="coach 02" data-id="2" />
+          <h4>Emma Carter</h4>
+          <p>Strength & Conditioning Coach</p>
+        </div>
+        <div class="coaches__card">
+          <img src="images/coach-03.jpg" alt="coach 03" data-id="1" />
+          <h4>Daniel Lee</h4>
+          <p>Olympic Weightlifting Coach</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner" id="contact">
+      <div class="banner__content">
+        <h2>MEMBER OF THE MONTH</h2>
+        <p>WANNA BE LIKE HIM? <a href="#">Join Us</a></p>
+      </div>
+      <div class="banner__image">
+        <img src="images/banner.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <!-- gallery -->
+    <section class="section__container gallery__container">
+      <h2 class="section__header">Downloadable images</h2>
+      <div class="gallery__grid">
+        <div class="gallery__card">
+          <img
+            src="https://images.pexels.com/photos/979310/pexels-photo-979310.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="downloadable image 1"
+            class="downloadable"
+            data-filename="img1.jpg"
+          />
+
+          <p>Click on the image to download it</p>
+        </div>
+        <div class="gallery__card">
+          <img
+            src="https://images.pexels.com/photos/974229/pexels-photo-974229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="downloadable image 2"
+            class="downloadable"
+            data-filename="img2.jpg"
+          />
+          <p>Click on the image to download it</p>
+        </div>
+        <div class="gallery__card">
+          <img
+            src="https://images.pexels.com/photos/793772/pexels-photo-793772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="downloadable imag 3"
+            class="downloadable"
+            data-filename="img3.jpg"
+          />
+          <p>Click on the image to download it</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- games -->
+    <section class="section__container">
+      <h2 class="section__header">Did You Know?</h2>
+      <p id="fact" class="alert alert-info"></p>
+      <div class="draggable__container">
+        <div id="draggable" class="ui-widget-content">
+          <img src="images/drag.png" alt="drag" />
+        </div>
+
+        <div id="droppable" class="ui-widget-header">
+          <img src="images/drop.png" alt="drop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="images/logo_white.svg" alt="logo" />
+          </a>
+          <ul class="footer__links">
+            <li>
+              <a href="tel:+2126552074218">
+                <span><i class="ri-customer-service-line"></i></span> +212 655
+                207 418
+              </a>
+            </li>
+            <li>
+              <a href="mailto:azilrababe@gmail.com">
+                <span><i class="ri-mail-line"></i></span> azilrababe@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><i class="ri-map-pin-line"></i></span>
+                kenitra, Morocco
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">services</a>
+            </li>
+            <li>
+              <a href="#">classes</a>
+            </li>
+            <li>
+              <a href="#">Gallery</a>
+            </li>
+            <li>
+              <a href="#">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Opening Hours</h4>
+          <ul class="footer__links">
+            <li>Weekdays 6am - 12am</li>
+            <li>Weekends 7am - 10pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 click-fit. All rights reserved.
+      </div>
+    </section>
   </body>
 </html>
